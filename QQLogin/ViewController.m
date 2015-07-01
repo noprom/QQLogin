@@ -9,6 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)login;
+@property (weak, nonatomic) IBOutlet UITextField *txtQQ;
+@property (weak, nonatomic) IBOutlet UITextField *txtPwd;
 
 @end
 
@@ -24,4 +27,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+// 登陆
+- (IBAction)login {
+    NSString *qq = self.txtQQ.text;
+    NSString *pwd = self.txtPwd.text;
+    NSLog(@"qq = %@,密码 ＝ %@",qq,pwd);
+    
+}
 @end
