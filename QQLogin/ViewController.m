@@ -32,6 +32,7 @@
     NSString *qq = self.txtQQ.text;
     NSString *pwd = self.txtPwd.text;
     NSLog(@"qq = %@,密码 ＝ %@",qq,pwd);
-    
+    // 退出键盘
+    [self.view endEditing:YES];
 }
 @end
